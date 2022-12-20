@@ -25,10 +25,10 @@ HanSa comes with these features:
 
 ## Credits
 
-Author:  Andre Alexander Pieper.
+Author:  Andre Alexander Pieper
 
-Version 1.0
+Version 0.1
 
-Date:  29.08.2019
+Date:  20.12.2022
 
 License: LGPLv3
