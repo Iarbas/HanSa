@@ -3,7 +3,7 @@
 # This script controls the main page aka the screensaver itself.
 
 import lib.win_operations as wo
-from tkinter import Tk
+from tkinter import Tk, Label
 
 
 class main_page(Tk):
@@ -14,6 +14,13 @@ class main_page(Tk):
         self.h = 300
         wo.set_window_center(self, self.w, self.h)
         self.resizable(False, False)
+
+        # Write some text into the window.
+        label= Label(self, text= "Hello child, your screensaver activated.", font=('Times New Roman bold',20))
+        label.pack(padx=10, pady=10)
+
+        # Make it fullscreen
+        self.attributes('-fullscreen', True)
 
         # Run the GUI.
         self.gui()
