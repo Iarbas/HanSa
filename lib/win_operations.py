@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
+from tkinter import Tk
 
-def set_window_center(window, width, height):
+
+def set_window_center(window: Tk, width: float, height: float) -> None:
 
     w_s = window.winfo_screenwidth()
     h_s = window.winfo_screenheight()
@@ -12,9 +14,14 @@ def set_window_center(window, width, height):
     window.minsize(width, height)
 
 
-def get_screen_size(window):
+def get_screen_size(window: Tk) -> None:
     return window.winfo_screenwidth(), window.winfo_screenheight()
 
 
-def get_window_size(window):
-    return window.winfo_reqwidth(), window.winfo_reqheight()
+def get_window_size(window: Tk) -> None:
+    return window.winfo_width(), window.winfo_height()
+
+def resize_label(window: Tk) -> None:
+    [window_width, window_height] = get_window_size(window)
+
+    
